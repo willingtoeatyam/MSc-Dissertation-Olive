@@ -49,7 +49,7 @@ public final class SftpClient {
         session = jsch.getSession(username, host, port);
         //disable known hosts checking
         //if you want to set knows hosts file You can set with jsch.setKnownHosts("path to known hosts file");
-        var config = new Properties();
+        Properties config = new Properties();
         config.put("StrictHostKeyChecking", "no");
         session.setConfig(config);
         session.setPassword(password);
