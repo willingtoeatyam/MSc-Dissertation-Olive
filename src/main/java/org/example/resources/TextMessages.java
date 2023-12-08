@@ -26,4 +26,7 @@ public class TextMessages {
             "Use '/log' to start a new session.";
     public static String END_LOG_MSG = "Thanks for logging. See you next time!";
     public static String PROMPT_PLACEHOLDER = "This should provide a selection of prompts";
+    public static String PROMPT1 = "Can you describe what you did today?";
+    public static String PROMPT2 = "Did you find any problem particularly challenging?";
+    public static String PROMPT3 = "Did you find anything especially interesting today?";
 }

@@ -8,6 +8,8 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.util.Random;
+
 import static org.example.services.Database.logTracker;
 
 public class Bot extends TelegramLongPollingBot {
@@ -129,7 +131,22 @@ public class Bot extends TelegramLongPollingBot {
 
     }
     public void promptCase(Update update){
-        messageSender(update, TextMessages.PROMPT_PLACEHOLDER);
+        Random rand = new Random();
+        int num = rand.nextInt(3);
+        switch (num){
+            case 0:
+                messageSender(update, TextMessages.PROMPT1);
+                break;
+            case 1:
+                messageSender(update, TextMessages.PROMPT2);
+                break;
+            case 2:
+                messageSender(update, TextMessages.PROMPT3);
+                break;
+            default:
+                messageSender(update, TextMessages.PROMPT_PLACEHOLDER);
+                break;
+        }
     }
     public void helpCase(Update update){
         messageSender(update, TextMessages.EXPLAINER);
