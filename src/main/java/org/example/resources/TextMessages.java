@@ -14,7 +14,7 @@ public class TextMessages {
     public static String EXPLAINER = "Whenever you work on your project, " +
             "use the '/log' command to start an entry. \n \n" +
             "Send in all relevant things you might want to document. " +
-            "It could range from a picture (or screenshot) of your progress so far to a few sentences describing what you worked on today! " +
+            "It could range from a picture (or screenshot) of your progress so far to a few sentences describing what you worked on today!\n" +
             "*When uploading media files, please DO NOT compress! Thanks!\n \n" +
             "Feel free to document whatever you think might be important. If you're unsure about want to send in, the '/prompt' command will come in handy!\n\n" +
             "When done logging, make sure to use the '/endlog' command to end the session.";
